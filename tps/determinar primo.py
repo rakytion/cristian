@@ -6,14 +6,14 @@
 #     preuba=resultado*numero
 #     if :
 #         print(numero)
-
-x=int(input("ingrese un numero: "))
-suma=0
 while True:
-    suma=suma+1
-    resultado=x//suma
-    calculo=resultado*suma
-    if x==calculo:
-        print(suma)
-        suma=
-        
+    x=int(input("ingrese un numero: "))
+    for numero in range(2,x+1):
+        div=x//numero
+        multi=div*numero
+        if x==multi:
+            if x==numero:
+                primo=True
+            else:primo=False
+            break
+    print(primo)

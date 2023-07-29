@@ -141,6 +141,15 @@
 #     listamin.append(minimo)
 # print(listamin)
 
-#traductor
+#traductor morse
 
+# traductormorse={"a":".-","b":"-...","c":"-.-.","d":"-..","e":".","f":"..-.","g":"--.","h":"....","i":"..","j":".---","k":"-.-","l":".-..","m":"--","n":"-.","o":"---","p":".--.","q":"--.-","r":".-.","s":"...","t":"-","u":"..-","v":"...-","w":".--","x":"-..-","y":"-.--","z":"--.."}
+# texto=input("ingresar texto a traducir a codigo Morse: ")
+# lista=[]
+# vacio=" "
+# for i in range(len(texto)):
+#   if vacio in texto[i]:
+#     lista.append("/")
+#   else:lista.append(traductormorse[texto[i]])
+# print(lista)
 

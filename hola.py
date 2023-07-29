@@ -132,3 +132,83 @@ while True
 #     return suma
 # resultado=suma2numeors(2,)
 # print(resultado)
+# import desafiopruebas as c
+
+# import desafiopruebas
+# desafiopruebas.saludar()
+
+
+# file=open("librerias.txt","w")
+# file.write("perro")
+# file.close()
+
+# file=open("librerias.txt","r")
+# print(file.read())
+
+
+#Clase 22/7 OBJETOS
+# class vehiculo:
+#     def __init__(self,motor,ruedas):
+#         self.motor=motor
+#         self.ruedas=ruedas
+#     def arrancar(self):
+#         print("brumm")
+# class auto(vehiculo):
+#     velocidad=10
+#     color="rojo"
+#     claxon="turuturu"
+#     modelo="1"
+#     def __init__(self,claxon,color,velocidad,modelo,motor, ruedas):
+#         self.claxon=claxon
+#         self.velocidad=velocidad
+#         self.color=color
+#         self.modelo=modelo
+#         super().__init__(motor,ruedas)
+#     def arrancar(self):
+#         print("brumm")
+#     def tocarclaxon(self):
+#         print(self.claxon)
+#     def __str__(self):
+#         return f"el auto es de color{self.color}, modelo {self.modelo},etc"
+#     def dicc(self):
+#         print(vars(self))
+# miautito=auto("tururu","rojo",12,"3",4,5)
+# miautito.tocarclaxon()
+# miautote=auto("pipi", "verde",15,"2",2,4)
+# miautote.tocarclaxon()
+# miautito.dicc()
+
+#crear un gato 5 atributos nombre collor de pelo color de ojos cansancio y hambre y 
+# 4 metodos comer dormir jugar acariciar. instanciar 3 objetos
+
+class gato():
+    def __init__(self, nombre, pelo, ojos, cansancio, hambre):
+        self.nombre=nombre
+        self.pelo=pelo
+        self.ojos=ojos
+        self.cansancio=cansancio
+        self.hambre=hambre
+    def comer(self):
+            print(self.nombre,"Tiene de hambre: ",self.hambre)
+            print("*Empieza a comer..* ñam ñam ñam")
+    def dormir(self):
+            print(self.nombre,"tenia mucho sueño: ",self.cansancio,"sus ojos: ",self.ojos,"se cierran.. *Se tira a dormir* ..Zzzzzz..")
+    def jugar(self):
+            print(f"{self.nombre} su pelo:{self.pelo}* se eriza yse pone en alerta* *rasgunazo*")
+    def acariciar(self):
+            print(f"{self.nombre} cierra sus ojos color {self.ojos}, se acurruca..prrr prrr prrr..")
+
+gato1=gato("juan","Marron","celestes",5,10)
+gato2=gato("Pedro","blanco","verdes",4,5)
+gato3=gato("Peluza","gris","marrones",3,6)
+
+gato1.comer()
+gato2.comer()
+gato3.comer()
+gato1.dormir()
+gato2.dormir()
+gato3.dormir()
+gato1.acariciar()
+gato2.acariciar()
+gato3.acariciar()
+
