@@ -11,12 +11,8 @@ NEGRO=(0, 0, 0)
 window= pygame.display.set_mode((width, height))
 pygame.display.set_caption("BUSCAMINAS")
 while True:
-    
-  
-
-
-    for event in pygame.event.get():
-        if event.type==pygame.QUIT:
-            pygame.quit()
-            quit()
+  for event in pygame.event.get():
+    if event.type==pygame.QUIT:
+      pygame.quit()
+      quit()
         
