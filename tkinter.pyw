@@ -2,7 +2,7 @@ import pygame
 #tamaño de pantalla y tablero
 width=400
 height=400
-rows, cols=10, 10
+filas, columnas=10, 10
 cell_size= width // rows
   #colores
 BLANCO=(255, 255, 255)
@@ -15,4 +15,5 @@ while True:
     if event.type==pygame.QUIT:
       pygame.quit()
       quit()
-        
+  for i in range(filas):
+   for j in range(columnas):
